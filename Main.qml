@@ -49,6 +49,8 @@ Item {
         }
     }
 
+    
+
     // Main rectangle for all
     Rectangle {
         id: uiContainer
@@ -161,6 +163,14 @@ Item {
                             opacity: userSelector.popup.visible ? 1 : 0.8
                         }
 
+                        indicator: Text {
+                            x: userSelector.width - width - 12
+                            y: (userSelector.height - height) / 2
+                            text: "▾" 
+                            color: "#9399b2"
+                            font.pixelSize: 16
+                        }
+
                         popup: Popup {
                             y: userSelector.height + 4
                             width: userSelector.width
@@ -247,6 +257,10 @@ Item {
                             color: "transparent"
                             border.width: 0
                         }
+
+                        Component.onCompleted: {
+                            passwordField.forceActiveFocus()
+                        }   
 
                         property string realPassword: ""
                         property var maskSymbols: ["-", "-", "|", "-", ".", ".", "|", "-", ".", "|"]
@@ -348,6 +362,14 @@ Item {
                             font.pixelSize: 18 * ratio
                             font.family: isleFont.name
                             opacity: sessionSelector.popup.visible ? 1 : 0.8
+                        }
+
+                        indicator: Text {
+                            x: userSelector.width - width - 12
+                            y: (userSelector.height - height) / 2
+                            text: "▾" 
+                            color: "#9399b2"
+                            font.pixelSize: 16
                         }
 
                         popup: Popup {
