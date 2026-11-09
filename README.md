@@ -1,7 +1,8 @@
 # Outer Wilds SDDM Theme
 
 An Outer Wilds–inspired login screen for SDDM, adapted from
-[Harmless Game SDDM Theme](https://github.com/neverloseagain1/Harmless-Game-SDDM-Theme)
+[Harmless Game SDDM Theme](https://github.com/neverloseagain1/Harmless-Game-SDDM-Theme).
+
 Idea from
 [MageRen](https://www.reddit.com/r/unixporn/comments/1ss6a9i/oc_outer_wilds_sddm_theme/)
 (original repo is closed)
